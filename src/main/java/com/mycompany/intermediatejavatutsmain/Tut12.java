@@ -20,6 +20,20 @@ public class Tut12 {
         // Convert to list.
         List<String> strList = Arrays.asList(strArr);
 
+        // Create array list
+        List<String> strList2 = new ArrayList<String>();
+
+        strList2.add("youtube");
+        strList2.add("google");
+        strList2.add("netflix");
+        strList2.add("amazon");
+
+        strList2.addAll(strList);
+
+        for (String str : strList2) {
+            System.out.printf("%s ", str);
+        }
+
     }
 
 }
