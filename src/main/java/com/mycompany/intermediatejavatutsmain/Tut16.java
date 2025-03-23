@@ -4,14 +4,30 @@
  */
 package com.mycompany.intermediatejavatutsmain;
 
+import java.util.*;
+
 /**
  *
  * @author gavan
  */
 public class Tut16 {
 
-    // hashset
+    // Hashset.
     public static void main(String[] args) {
+
+        // HashSet - only unique values
+        String[] strArr = {"apple", "apple", "grapes", "banana", "orange"};
+
+        List<String> listA = Arrays.asList(strArr);
+
+        System.out.printf("%s ", listA);
+        System.out.println("");
+
+        // Create a HashSet from our list.
+        Set<String> setA = new HashSet<String>(listA);
+
+        System.out.printf("%s ", setA);
+        System.out.println(""); // duplicate "apple" removed
 
     }
 
